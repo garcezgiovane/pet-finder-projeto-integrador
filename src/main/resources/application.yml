@@ -3,9 +3,9 @@ server:
     include-stacktrace: never
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/db_teste?useSSL=false&useTimezone=true&serverTimezone=UTC
-    username: root
-    password: admin
+    url: jdbc:mysql://b3a5a87af54473:b7ff2ceb@us-cdbr-east-02.cleardb.com/heroku_7c7105b3fcb465b?reconnect=true
+    username: b3a5a87af54473
+    password: b7ff2ceb
   jpa:
     hibernate:
       ddl-auto: update
