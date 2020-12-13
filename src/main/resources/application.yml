@@ -1,0 +1,11 @@
+server:
+  error:
+    include-stacktrace: never
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/db_teste?useSSL=false&useTimezone=true&serverTimezone=UTC
+    username: root
+    password: admin
+  jpa:
+    hibernate:
+      ddl-auto: update
