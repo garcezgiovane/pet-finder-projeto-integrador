@@ -34,8 +34,13 @@ public class AnimalController {
     }
 
     @PostMapping
-    public  ResponseEntity<Animal> save(@RequestBody AnimalRequest animalRequest) {
+    public ResponseEntity<Animal> save(@RequestBody AnimalRequest animalRequest) {
         return new ResponseEntity<>(animalService.save(animalRequest), HttpStatus.CREATED);
+    }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<Animal> edit(@PathVariable long id, @RequestBody AnimalRequest animalRequest) {
+        return ResponseEntity.ok(animalService.edit(id, animalRequest));
     }
 
 
